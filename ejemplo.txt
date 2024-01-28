@@ -1,0 +1,98 @@
+function imprime_cambio_clave() {
+		global $exped, $nombres, $clave_anterior;
+	print <<<U001
+     <tr width="500" >
+		<td width="500" align="center">
+			<font face="Arial" size="2"><br>
+			Por favor escriba la clave, esta puede ser hasta 20 d&iacute;gitos alfanum&eacute;ricos</font>
+        <table bgcolor="#EFEFEF" align="center" border="0" cellpadding="8" 
+            cellspacing="0" width="300">
+          <tbody>
+          <form action="" width="200" align="center" name="claves"
+				 >
+			<p><tr>
+				<td  width="100" align="center"><p><font size="2" face="Arial">&nbsp;
+				Clave Anterior:&nbsp;</font>
+				<INPUT TYPE="password" NAME="claveA" size="21" maxlength="20" tabindex="1"></td>
+
+				<td  width="100" align="center"><p><font size="2" face="Arial">&nbsp;
+				Nueva Clave:&nbsp;</font>
+				<INPUT TYPE="password" NAME="clave1" size="21" maxlength="20" tabindex="1"></td>
+
+				<td width="100" align="center"><font size="2" face="Arial">&nbsp;
+				Repetir Clave:&nbsp;</font>
+				<INPUT TYPE="password" NAME="clave2" size="21" maxlength="20" tabindex="2"></td>
+			</tr>
+			<tr width="300" >
+				<td colspan="3"> 
+				<table align="center" border="0" width="200">
+				<tbody>
+					<tr>
+						<td valign="top"><p align="center">
+							<input type="reset" value="Borrar" name="C1">
+						</td>
+						<td valign="top"><p align="center">
+							<input type="button" value="Salir" name="C1"
+							onclick="javascript:self.close();"> 
+						</td>
+						<td valign="top"><p align="center">
+							<input type="button" value="Cambiar Clave" onClick="valida_claveA(document.claves)" >
+						</td>
+							<input value="x" name="contra" type="hidden"> 
+							<input value="$exped" name="exp" type="hidden">
+							<input value="$nombres" name="nombres" type="hidden">
+					</tr>
+				</tbody>
+				</table>
+				</td>
+			</tr>
+          </form>  
+          </tbody>
+        </table>
+        </td>
+     </tr>
+   <tr width="570" >
+        <td >
+		  <table align="center" border="0" cellpadding="0" 
+            cellspacing="0" width="400">
+          </table>
+        </td>
+    </tr>
+ </table>
+</body>
+</html>
+U001
+;
+    }
+
+
+***************
+
+
+    function prueba(){
+	$titulo = "Un Titulo";
+	$mensaje = "Hola";
+	print <<< Etiqueta1
+<head>
+<title> $titulo </title>
+<script>
+function unMensaje() {
+	msg = "$mensaje";
+	alert(msg);
+}
+</script>
+<head>
+Etiqueta1
+;
+}
+
+**<head>
+<title> Un Titulo </title>
+<script>
+function unMensaje() {
+	msg = "Hola";
+	alert(msg);
+}
+</script>
+<head>
+

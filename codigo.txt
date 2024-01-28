@@ -1,0 +1,288 @@
+	<SCRIPT LANGUAGE="JavaScript">
+    function validar_claves(f) {
+		if ((f.clave1.value == "") || (f.clave2.value == "")) {
+			alert('Se requiere escriba la clave');
+	        return false;
+		}
+		else{
+			if (f.clave1.value == f.clave2.value){
+				f.contra.value = hex_md5(f.clave1.value);
+				f.clave1.value = "";
+				f.clave2.value = "";
+				return true;
+			}
+			else {
+				alert('Debe escribir la misma clave en ambas cajas de texto');
+				return false;
+			}
+		}
+    }
+	function valida_claveA() {
+		alert 'xxxxxxxxxxxxxxxxxxxx';
+		if (document.claves.claveA.value == "") || (document.claves.clave1.value == "") || (document.claves.clave2.value == "")) {
+			alert('Se requiere escriba la clave');
+	        return false;
+		}
+		else{
+			if (f.clave1.value == f.clave2.value){
+				f.contra.value = hex_md5(f.clave1.value);
+				f.clave1.value = "";
+				f.clave2.value = "";
+				return true;
+			}
+			else {
+				alert('Debe escribir la misma clave en ambas cajas de texto');
+				return false;
+			}
+		}
+    }
+
+  </SCRIPT>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+	<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<TITLE>Asignaci&oacute;n de Claves</TITLE>
+<SCRIPT LANGUAGE="Javascript">
+<!--
+chequeo = false;
+ced="18536460";
+exp_e="200310002";
+nombres="JUAN CARLOS";
+apellidos="SALAZAR HERNANDEZ";
+carrera="INGENIERÍA MECÁNICA";
+CancelPulsado=false;
+var miTempo;
+// --></SCRIPT> 
+<SCRIPT LANGUAGE="Javascript" SRC="https://127.0.0.1/clave//md5.js">
+  <!--
+    alert('Error con el fichero js');
+  // -->
+  </SCRIPT>
+<SCRIPT LANGUAGE="Javascript" SRC="https://127.0.0.1/clave//inscripcion.js">
+  <!--
+    alert('Error con el fichero js');
+  // -->
+  </SCRIPT>
+
+<SCRIPT LANGUAGE="Javascript" SRC="https://127.0.0.1/clave//popup.js">
+  <!--
+    alert('Error con el fichero js');
+  // -->
+  </SCRIPT>
+<SCRIPT LANGUAGE="Javascript" SRC="https://127.0.0.1/clave//popup3.js">
+  <!--
+    alert('Error con el fichero js');
+  // -->
+  </SCRIPT>
+  
+<style type="text/css">
+<!--
+#prueba {
+  overflow:hidden;
+  color:#00FFFF;
+  background:#F7F7F7;
+}
+
+.titulo {
+  text-align: center; 
+  font-family:Arial; 
+  font-size: 14px; 
+  font-weight: normal;
+  margin-top:0;
+  margin-bottom:0;	
+}
+.tit14 {
+  text-align: center; 
+  font-family:Arial; 
+  font-size: 14px; 
+  font-weight: bold;
+}
+.instruc {
+  font-family:Arial; 
+  font-size: 12px; 
+  font-weight: normal;
+  background-color: #FFFFCC;
+}
+.datosp {
+  text-align: left; 
+  font-family:Arial; 
+  font-size: 13px; 
+  font-weight: normal;
+  background-color:#F7F7F7; 
+}
+.enc_p {
+  color:#FFFFFF;
+  text-align: center; 
+  font-family:Helvetica; 
+  font-size: 11px; 
+  font-weight: bold;
+  background-color:#3366CC;
+  height:20px;
+}
+.inact {
+  text-align: center; 
+  font-family:Arial; 
+  font-size: 12px; 
+  font-weight: normal;
+  background-color:#F7F7F7; 
+}
+.act { 
+  text-align: center; 
+  font-family:Arial; 
+  font-size: 12px; 
+  font-weight: normal;
+  background-color:#99CCFF;
+}
+
+DIV.peq {
+   font-family: Arial;
+   font-size: 9px;
+   z-index: 1;
+}
+select.peq {
+   font-family: Arial;
+   font-size: 9px;
+   z-index: 1;
+}
+
+-->
+</style>  
+</head>
+
+<body  onload="javascript:self.focus();document.forms.claves.clave1.focus();" >
+
+<table border="0" width="750" id="table1" cellspacing="1" cellpadding="0" 
+ style="border-collapse: collapse">
+    <tr><td>
+		<table border="0" width="750">
+		<tr>
+
+		<td width="125">
+		<p align="right" style="margin-top: 0; margin-bottom: 0">
+		<img border="0" src="imagenes/unex15.gif" 
+		     width="75" height="75"></p></td>
+		<td width="500">
+		<p class="titulo">
+
+		Universidad Nacional Experimental Polit&eacute;cnica</p>
+		<p class="titulo">
+
+		Vicerrectorado Luis Caballero Mej&iacute;as</font></p>
+		<p class="titulo">
+		</font></td>
+		<td width="125">&nbsp;</td>
+		</tr><tr><td colspan="3" style="background-color:#99CCFF;">
+		<font style="font-size:2px;"> &nbsp;</font></td></tr>
+	    </table></td>
+
+    </tr>
+    <tr>
+        <td width="750" class="tit14"> 
+         Asignaci&oacute;n de Claves</td>
+
+    </tr>
+    <tr>
+    <td width="570"><br>
+        <div class="tit14">Datos del Estudiante</div>
+
+        <table align="center" border="0" cellpadding="0" cellspacing="1" width="570">
+            <tbody>
+                <tr>
+                    <td style="width: 250px;" class="datosp">
+                        Apellidos:</td>
+                    <td style="width: 250px;" class="datosp">
+                        Nombres:</td>
+                    <td style="width: 110px;" class="datosp">
+
+                        C&eacute;dula:</td>
+                    <td style="width: 114px;" class="datosp">
+                        Expediente:</td>
+                </tr>
+
+                <tr>
+                    <td style="width: 250px;"  class="datosp">SALAZAR HERNANDEZ                    </td>
+
+                    <td style="width: 250px;" class="datosp">JUAN CARLOS                    </td>
+                    <td style="width: 110px;" class="datosp">18536460                    </td>
+                    <td style="width: 114px;" class="datosp">200310002                    </td>
+                <tr>
+                    <td colspan="4" class="datosp">Especialidad: INGENIERÍA MECÁNICA</td>
+                </tr>
+				<tr>
+
+				  <td colspan="4" class="peq">&nbsp;</td>
+				</tr>
+								
+            </tbody>
+        </table>
+    </td>
+    </tr>
+    <tr>     <tr width="500" >
+		<td width="500" align="center">
+
+			<font face="Arial" size="2"><br>
+			Por favor escriba la clave, esta puede ser hasta 20 d&iacute;gitos alfanum&eacute;ricos</font>
+        <table bgcolor="#EFEFEF" align="center" border="0" cellpadding="8" 
+            cellspacing="0" width="300">
+          <tbody>
+          <form action="" width="200" align="center" name="claves"
+				 >
+			<p><tr>
+				<td  width="100" align="center"><p><font size="2" face="Arial">&nbsp;
+
+				Clave Anterior:&nbsp;</font>
+				<INPUT TYPE="password" NAME="claveA" size="21" maxlength="20" tabindex="1"></td>
+
+				<td  width="100" align="center"><p><font size="2" face="Arial">&nbsp;
+				Nueva Clave:&nbsp;</font>
+				<INPUT TYPE="password" NAME="clave1" size="21" maxlength="20" tabindex="1"></td>
+
+				<td width="100" align="center"><font size="2" face="Arial">&nbsp;
+				Repetir Clave:&nbsp;</font>
+
+				<INPUT TYPE="password" NAME="clave2" size="21" maxlength="20" tabindex="2"></td>
+			</tr>
+			<tr width="300" >
+				<td colspan="3"> 
+				<table align="center" border="0" width="200">
+				<tbody>
+					<tr>
+						<td valign="top"><p align="center">
+							<input type="reset" value="Borrar" name="C1">
+
+						</td>
+						<td valign="top"><p align="center">
+							<input type="button" value="Salir" name="C1"
+							onclick="javascript:self.close();"> 
+						</td>
+						<td valign="top"><p align="center">
+							<input type="button" value="Cambiar Clave" onClick="valida_claveA()" >
+						</td>
+							<input value="x" name="contra" type="hidden"> 
+							<input value="200310002" name="exp" type="hidden">
+							<input value="JUAN CARLOS" name="nombres" type="hidden">
+
+					</tr>
+				</tbody>
+				</table>
+				</td>
+			</tr>
+          </form>  
+          </tbody>
+        </table>
+        </td>
+
+     </tr>
+   <tr width="570" >
+        <td >
+		  <table align="center" border="0" cellpadding="0" 
+            cellspacing="0" width="400">
+          </table>
+        </td>
+    </tr>
+ </table>
+</body>
+
+</html>
