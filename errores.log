@@ -2492,3 +2492,5 @@ C:[03/11/2008 14:55:02.87][190.79.228.87][N_E]  SELECT ci_e, exp_e, nombres, ape
 [29/01/2024 00:32:51.77][172.16.4.20][N_E]  SELECT ci_e, exp_e, nombres, apellidos,carrera  FROM DACE002, TBLACA010 WHERE ci_e='31596296' AND DACE002.c_uni_ca=TBLACA010.c_uni_ca  {[MERANT][ODBC SQLBase driver][SQLBase]09268 GCI CCN Cannot connect}
  {[MERANT][ODBC SQLBase driver][SQLBase]09268 GCI CCN Cannot connect}
 [29/01/2024 00:38:23.47][172.16.4.20][N_E]  SELECT ci_e, exp_e, nombres, apellidos,carrera  FROM DACE002, TBLACA010 WHERE ci_e='31596296' AND DACE002.c_uni_ca=TBLACA010.c_uni_ca  {[MERANT][ODBC SQLBase driver][SQLBase]09268 GCI CCN Cannot connect}
+ {[MERANT][ODBC SQLBase driver][SQLBase]09268 GCI CCN Cannot connect}
+[29/01/2024 10:03:44.10][172.16.4.20][N_E]  SELECT ci_e, exp_e, nombres, apellidos,carrera  FROM DACE002, TBLACA010 WHERE ci_e='31596296' AND DACE002.c_uni_ca=TBLACA010.c_uni_ca  {[MERANT][ODBC SQLBase driver][SQLBase]09268 GCI CCN Cannot connect}
